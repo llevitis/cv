@@ -1,4 +1,4 @@
-TEX = gkiarcv
+TEX = llevitiscv
 
 default:
 	lualatex ${TEX} && biber ${TEX} && lualatex ${TEX} && lualatex ${TEX}
