@@ -1,618 +1,94 @@
 %% InSubmission
-@manual{Bridgeford2019-kp,
-  title    = "Optimal Experimental Design for Big Data: Applications in Brain
-              Imaging",
-  author   = "Bridgeford, E.~W. and Wang, S. and Yang, Z. and Wang, Z.
-              and Xu, T. and Craddock, C. and \textbf{Kiar}, \textbf{G.} and
-              Gray-Roncal, W. and Priebe, C.~E. and Caffo, B. and
-              Milham, M. and Zuo, X~.N. and {Consortium for Reliability
-              and Reproduciblity} and Vogelstein, J~.T.",
-  abstract = "The cost of data collection and processing is becoming
-              prohibitively expensive for many research groups across
-              disciplines, a problem that is exacerbated by the dependence of
-              ever larger sample sizes to obtain reliable inferences for
-              increasingly subtle questions. And yet, as more data is available
-              and open access, more researchers desire to analyze it for
-              different questions, often including previously unforeseen
-              questions. To further increase sample sizes, existing datasets
-              are often amalgamated. These reference datasets - datasets that
-              serve to answer many disparate questions for different
-              individuals - are increasingly common and important. Reference
-              pipelines efficiently and flexibly analyze on all the datasets.
-              How can one optimally design these reference datasets and
-              pipelines to yield derivative data that are simultaneously useful
-              for many different tasks? We propose an approach to experimental
-              design that leverages multiple measurements for each distinct
-              item (for example, an individual). The key insight is that each
-              measurement of the same item should be more similar to other
-              measurements of that item, as compared to measurements of any
-              other item. In other words, we seek to optimally discriminate one
-              item from another. We formalize the notion of discriminability,
-              and introduce both a non-parameteric and parametric statistic to
-              quantify the discriminability of potentially multivariate or
-              non-Euclidean datasets. With this notion, one can make optimal
-              decisions - either with regard to acquisition or analysis of data
-              - by maximizing discriminability. Crucially, this optimization
-              can be performed in the absence of any task-specific (or
-              supervised) information. We show that optimizing decisions with
-              respect to discriminability yields improved performance on
-              subsequent inference tasks. We apply this strategy to a brain
-              imaging dataset built by the ``Consortium for Reliability and
-              Reproducability'' which consists of 24 disparate magnetic
-              resonance imaging datasets, each with up to hundreds of
-              individuals that were imaged multiple times. We show that by
-              optimizing pipelines with respect to discriminability, we improve
-              performance on multiple subsequent inference tasks, even though
-              discriminability does not consider the tasks whatsoever.",
-  journal  = "bioRxiv",
-  pages    = "802629",
-  month    =  oct,
-  year     =  2019,
-  language = "en"
-}
-@manual{Kiar2019-in,
-  title         = "Comparing Perturbation Models for Evaluating Stability of
-                   {Post-Processing} Pipelines in Neuroimaging",
-  author        = "\textbf{Kiar}, \textbf{G.} and de Oliveira Castro, P. and Rioux,
-                   P. and Petit, E. and Brown, S.~T. and Evans, A.~C.
-                   and Glatard, T.",
-  abstract      = "A lack of software reproducibility has become increasingly
-                   apparent in the last several years, calling into question
-                   the validity of scientific findings affected by published
-                   tools. Reproducibility issues may have numerous sources of
-                   error, including the underlying numerical stability of
-                   algorithms and implementations employed. Various forms of
-                   instability have been observed in neuroimaging, including
-                   across operating system versions, minor noise injections,
-                   and implementation of theoretically equivalent algorithms.
-                   In this paper we explore the effect of various perturbation
-                   methods on a typical neuroimaging pipeline through the use
-                   of i) near-epsilon noise injections, ii) Monte Carlo
-                   Arithmetic, and iii) varying operating systems to identify
-                   the quality and severity of their impact. The work presented
-                   here demonstrates that even low order computational models
-                   such as the connectome estimation pipeline that we used are
-                   susceptible to noise. This suggests that stability is a
-                   relevant axis upon which tools should be compared,
-                   developed, or improved, alongside more commonly considered
-                   axes such as accuracy/biological feasibility or performance.
-                   The heterogeneity observed across participants clearly
-                   illustrates that stability is a property of not just the
-                   data or tools independently, but their interaction.
-                   Characterization of stability should therefore be evaluated
-                   for specific analyses and performed on a representative set
-                   of subjects for consideration in subsequent statistical
-                   testing. Additionally, identifying how this relationship
-                   scales to higher-order models is an exciting next step which
-                   will be explored. Finally, the joint application of
-                   perturbation methods with post-processing approaches such as
-                   bagging or signal normalization may lead to the development
-                   of more numerically stable analyses while maintaining
-                   sensitivity to meaningful variation.",
-  month         =  aug,
-  year          =  2019,
-  archivePrefix = "arXiv",
-  primaryClass  = "q-bio.NC",
-  eprint        = "1908.10922"
+%% Replace %% on following line with at symbol
+%%manual{preprintid,
+  title = {},
+  author = {\textbf{Levitis}, \textbf{L.} and Last, F. and others},
+  abstract = {},
+  journal = {},
+  pages = {},
+  month = {},
+  year = {},
+  language = {en}
 }
 
 %% WorkInProgress
-%% @techreport{name, }
+%% Replace %% on following line with at symbol
+%%techreport{wipid, }
 
 %% PeerReviewedJournalArticles
-@ARTICLE{Zhang2019-ko,
-  title    = "Brain status modeling with non-negative projective dictionary
-              learning",
-  author   = "Zhang, M. and Desrosiers, C. and Guo, Y. and
-              Khundrakpam, B. and Al-Sharif, N. and \textbf{Kiar}, \textbf{G.} and
-              Valdes-Sosa, P. and Poline, J.~B. and Evans, A.~C.",
-  abstract = "Accurate prediction of individuals' brain age is critical to
-              establish a baseline for normal brain development. This study
-              proposes to model brain development with a novel non-negative
-              projective dictionary learning (NPDL) approach, which learns a
-              discriminative representation of multi-modal neuroimaging data
-              for predicting brain age. Our approach encodes the variability of
-              subjects in different age groups using separate dictionaries,
-              projecting features into a low-dimensional manifold such that
-              information is preserved only for the corresponding age group.
-              The proposed framework improves upon previous discriminative
-              dictionary learning methods by incorporating orthogonality and
-              non-negativity constraints, which remove representation
-              redundancy and perform implicit feature selection. We study brain
-              development on multi-modal brain imaging data from the PING
-              dataset (N = 841, age = 3-21 years). The proposed analysis uses
-              our NDPL framework to predict the age of subjects based on
-              cortical measures from T1-weighted MRI and connectome from
-              diffusion weighted imaging (DWI). We also investigate the
-              association between age prediction and cognition, and study the
-              influence of gender on prediction accuracy. Experimental results
-              demonstrate the usefulness of NDPL for modeling brain
-              development.",
-  journal  = "Neuroimage",
-  pages    = "116226",
-  month    =  oct,
-  year     =  2019,
-  keywords = "Brain age prediction; Brain maturity modeling; Cognitive
-              biomarker; Projective dictionary learning",
-  language = "en"
+%% Replace %% on following line with at symbol
+%%article{paperid,
+  title = {},
+  author = {},
+  abstract = {},
+  journal = {},
+  pages = {},
+  month = {},
+  year = {},
+  keywords = {},
+  language = {en}
 }
-@ARTICLE{Yarkoni2019-be,
-  title    = "{PyBIDS}: Python tools for {BIDS} datasets",
-  author   = "Yarkoni, T. and Markiewicz, C. and de la Vega,
-              A. and Gorgolewski, K. and Salo, T. and
-              Halchenko, Y. and McNamara, Q. and DeStasio, K.
-              and Poline, J.~B. and Petrov, D. and Hayot-Sasson,
-              V. and Nielson, D. and Carlin, J. and \textbf{Kiar},
-              \textbf{G.} and Whitaker, K. and DuPre, E. and Wagner,
-              A. and Tirrell, L. and Jas, M. and Hanke, M. and
-              Poldrack, R. and Esteban, O. and Appelhoff, S. and
-              Holdgraf, C. and Staden, I. and Thirion, B. and
-              Kleinschmidt, D. and Lee, J. and di Castello, M. and
-              Notter, M. and Blair, R.",
-  abstract = "Software archive",
-  journal  = "JOSS",
-  volume   =  4,
-  number   =  40,
-  pages    = "1294",
-  month    =  aug,
-  year     =  2019
-}
-@article{kiar2019clowdr,
-author={\textbf{Kiar}, \textbf{G.} and Brown, S.~T. and Glatard, T. and Evans, A.~C.},
-title={A Serverless Tool for Platform Agnostic Computational Experiment Management},
-journal={Frontiers in Neuroinformatics},
-volume={13},
-pages={12},
-year={2019},
-month={mar},
-url={https://www.frontiersin.org/article/10.3389/fninf.2019.00012},
-DOI={10.3389/fninf.2019.00012},
-ISSN={1662-5196},   
-abstract={Neuroscience has been carried into the domain of big data and high performance computing (HPC) on the backs of initiatives in data collection and an increasingly compute-intensive tools. While managing HPC experiments requires considerable technical acumen, platforms and standards have been developed to ease this burden on scientists. While web-portals make resources widely accessible, data organizations such as the Brain Imaging Data Structure and tool description languages such as Boutiques provide researchers with a foothold to tackle these problems using their own datasets, pipelines, and environments. While these standards lower the barrier to adoption of HPC and cloud systems for neuroscience applications, they still require the consolidation of disparate domain-specific knowledge. We present Clowdr, a lightweight tool to launch experiments on HPC systems and clouds, record rich execution records, and enable the accessible sharing and re-launch of experimental summaries and results. Clowdr uniquely sits between web platforms and bare-metal applications for experiment management by preserving the flexibility of do-it-yourself solutions while providing a low barrier for developing, deploying and disseminating neuroscientific analysis.}
-}
-@article{glatard2018boutiques,
-  title={Boutiques: a flexible framework to integrate command-line applications in computing platforms},
-  volume={7},
-  ISSN={2047-217X},
-  url={http://dx.doi.org/10.1093/gigascience/giy016},
-  DOI={10.1093/gigascience/giy016},
-  number={5},
-  journal={GigaScience},
-  publisher={Oxford University Press (OUP)},
-  author={Glatard, T. and \textbf{Kiar}, \textbf{G.} and Aumentado-Armstrong, T. and Beck, N. and Bellec, P. and Bernard, R. and Bonnet, A. and Brown, S.~T. and Camarasu-Pop, S. and Cervenansky, F. and Das, S. and Ferreira~da~Silva, R. and Flandin, G. and Girard, P. and Gorgolewski, K.~J. and Guttmann, C.~R.~G. and Hayot-Sasson, V. and Quirion, P.~O. and Rioux, P. and Rousseau, M.~E. and Evans, A.~C.},
-  year={2018},
-  month={Mar}}
-@article{matelsky2018containers,
-  title={Container-Based Clinical Solutions for Portable and Reproducible Image Analysis},
-  volume={31},
-  ISSN={1618-727X},
-  url={http://dx.doi.org/10.1007/s10278-018-0089-4},
-  DOI={10.1007/s10278-018-0089-4},
-  number={3},
-  journal={Journal of Digital Imaging},
-  publisher={Springer Nature},
-  author={Matelsky, J. and \textbf{Kiar}, \textbf{G.} and Johnson, E. and Rivera, C. and Toma, M. and Gray-Roncal, W.},
-  year={2018},
-  month={May},
-  pages={315–320}
-}
-@article{gorgolewski2017bids,
-  title={BIDS apps: Improving ease of use, accessibility, and reproducibility of neuroimaging data analysis methods},
-  author={Gorgolewski, K.J. and Alfaro-Almagro, F. and Auer, T. and Bellec, P. and Capot{\u{a}}, M. and Chakravarty, M.~M. and Churchill, N.~W. and Cohen, A.~L. and Craddock, R.~C. and Devenyi, G.~A. and Eklund, A. and Esteban, O. and Flandin, G. and Guntupalli, J.~S. and Jenkinson, M. and Keshavan, A. and \textbf{Kiar}, \textbf{G.} and Raamana, P.~R. and Raffelt, D. and Steele, C.~J. and Quirion, P.~O. and Smith, R.~E. and Strother, S. and Varoquaux, G. and Yarkoni, T. and Wang, Y. and Poldrack, R.~A.},
-  volume={13},
-  number={3},
-  pages={e1005209},
-  year={2017},
-  publisher={Public Library of Science}
-}
-@article{kiar2017sic,
-	author = {\textbf{Kiar}, \textbf{G.} and Gorgolewski, K.~J.
-	and Kleissas, D. and {Gray Roncal}, W.~R.
-	and Litt, B. and Wandell, B. and Poldrack, R.~A.
-	and Wiener, M. and Vogelstein, R.~J.
-	and Burns, R. and Vogelstein, J.~T.},
-	title = {Science In the Cloud (SIC): A use case in MRI Connectomics},
-	journal={GigaScience},
-	year={2017},
-	volume={gix013},
-	month={mar},
-	doi={10.1093/gigascience/gix013}
-}
-@article{vogelstein2016grandchallenges,
-   author = {{Vogelstein}, J.~T. and {Amunts}, K. and {Andreou}, A. and {Angelaki}, D. and 
-    {Ascoli}, G. and {Bargmann}, C. and {Burns}, R. and {Cali}, C. and 
-    {Chance}, F. and {Chun}, M. and {Church}, G. and {Cline}, H. and 
-    {Coleman}, T. and {de La Rochefoucauld}, S. and {Denk}, W. and 
-    {Belen Elgoyhen}, A. and {Cummings}, R.~E. and {Evans}, A. and 
-    {Harris}, K. and {Hausser}, M. and {Hill}, S. and {Inverso}, S. and 
-    {Jackson}, C. and {Jain}, V. and {Kass}, R. and {Kasthuri}, B. and 
-    \textbf{Kiar}, \textbf{G.} and {Kording}, K. and {Koushika}, S. and {Krakauer}, J. and 
-    {Landis}, S. and {Layton}, J. and {Luo}, Q. and {Marblestone}, A. and 
-    {Markowitz}, D. and {McArthur}, J. and {Mensh}, B. and {Milham}, M. and 
-    {Mitra}, P. and {Neskovic}, P. and {Nicolelis}, M. and {O'Brien}, R. and 
-    {Oliva}, A. and {Orban}, G. and {Peng}, H. and {Picchini-Schaffer}, A. and 
-    {Picciotto}, M. and {Poline}, J.-B. and {Poo}, M.-m. and {Pouget}, A. and 
-    {Raghavachari}, S. and {Roskams}, J. and {Sejnowski}, T. and 
-    {Sommer}, F. and {Spruston}, N. and {Swanson}, L. and {Toga}, A. and 
-    {Vogelstein}, R.~J. and {Yuste}, R. and {Zador}, A. and {Huganir}, R. and 
-    {Miller}, M.},
-    title = "{Grand Challenges for Global Brain Sciences}",
-  journal = {ArXiv e-prints},
-archivePrefix = "arXiv",
-   eprint = {1608.06548},
-     year = 2016,
-    month = aug,
-   adsurl = {http://adsabs.harvard.edu/abs/2016arXiv160806548V},
-}
-@article{neurostorm,
-	Annote = {doi: 10.1016/j.neuron.2016.10.033},
-	Author = {Vogelstein, J.~T. and Mensh, B. and H{\"a}usser, M. and Spruston, N. and Evans, A.~C. and Kording, K. and Amunts, K. and Ebell, C. and Muller, J. and Telefont, M. and Hill, S. and Koushika, S.~P. and Cal{\`\i}, C. and Vald{\'e}s-Sosa, P.~A. and Littlewood, P.~B. and Koch, C. and Saalfeld, S. and Kepecs, A. and Peng, H. and Halchenko, Y.~O. and \textbf{Kiar}, \textbf{G.} and Poo, M.~M. and Poline, J.~B. and Milham, M.~P. and Schaffer, A.~P. and Gidron, R. and Okano, H. and Calhoun, V.~D. and Chun, M. and Kleissas, D.~M. and Vogelstein, R.~J. and Perlman, E. and Burns, R. and Huganir, R. and Miller, M.~I.},
-	Booktitle = {Neuron},
-	Date-Added = {2016-11-07 15:56:52 +0000},
-	Date-Modified = {2016-11-07 15:56:52 +0000},
-	Doi = {10.1016/j.neuron.2016.10.033},
-	Isbn = {0896-6273},
-	Journal = {Neuron},
-	M3 = {doi: 10.1016/j.neuron.2016.10.033},
-	month = {nov},
-	year = {2016},
-	Number = {3},
-	Pages = {622--627},
-	Publisher = {Elsevier},
-	Title = {To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery},
-	Ty = {JOUR},
-	Volume = {92},
-	note={requested article}
-}
-
 
 %% PeerReviewedConferenceArticles
-@inproceedings{Dupre2018chi,
-    author = {DuPre*, E. and \textbf{Kiar}*, \textbf{G.} and Craddock, R.~C., and  {Gorgolewski}, K.~J. and Hoffstaedter, F. and Keshavan, A. and Poline, J.~B. and Visconti di Oleggio Castello, M. and Whitaker, K. and Bellec, P.},
-    title = {Organization for Human Brain Mapping Open Science Hackathons: Accessible and Inclusive Neuroinformatics},
-    year = {2018},
-    month = {jan},
-    publisher = {Computer Human Interaction},
-    journal = {2nd Workshop on Hacking and Making at Time-Bounded events},
-    abstract = {As leaders of the Organization for Human Brain Mapping's (OHBM) Open Science Special Interest Group, we host an annual hackathon to teach and promote open science among neuroimaging researchers. We have endeavored to design our hackathon events such that existing open-source software projects receive attention and support from experienced users while new adopters can gain familiarity with these tools. However, we have received community feedback that our events are still perceived as exclusionary to code-nervous researchers, and we have had difficulty quantifying overall outcomes to assess how to make improvements. We are applying to the CHI workshop with the hope of learning how to better design and organize our events to be more inclusive, and provide concrete evidence upon which we can advertise the successes of OHBM hackathon events and continuously improve.}
-}
-@inproceedings{Kiar2013wef,
-	title={Electric localization of weakly electric fish using neural networks},
-	author={\textbf{Kiar}, \textbf{G.} and Mamatjan, Y. and Jun, J. and Maler, L. and Adler, A.},
-	journal={Journal of Physics: Conference Series},
-	volume={434},
-	year={2013},
-	month={may},
+%% Replace %% on following line with at symbol
+%%inproceedings{confarticleid,
+    author = {},
+    title = {},
+    year = {},
+    month = {},
+    publisher = {},
+    journal = {},
+    abstract = {}
 }
 
 %% Talks & Workshops
-@booklet{kiar_talk_cre2019sc,
-  title={Comparing Perturbation Models for Evaluating Stability of Neuroimaging Pipelines},
-  journal={Computational Reproducibility at Exascale},
-  publisher = {Super Computing},
-  year={2019},
-  month={nov},
-  note={Presentation}
-}
-@booklet{ossig2019symposium,
-  title={From “Open Science” to “Science”: Shifting the status quo in data sharing, software, and publishing},
-  journal={Organization for Human Brain Mapping},
-  year={2019},
-  month={jun},
-  note={Symposium and presentation}
-}
-@booklet{Kiar2019fairpipelines_ohbm,
-  title = {A FAIR Approach to Neuroimaging Analysis with Boutiques},
-  journal = {Organization for Human Brain Mapping},
-  year = {2018},
+@booklet{Levitis2020ohbmhackathon,
+  title = {OHBM Annual BrainHack \& TrainTrack},
+  journal = {Open Science Special Interest Group},
+  publisher = {Organization for Human Brain Mapping},
+  year = {2020},
   month = {jun},
-  note={Presentation}
+  note = {Workshop}
 }
-@booklet{Kiar2019hbhltraining,
+@booklet{Levitis2019hbhltraining,
   title = {Introduction to Scientific Software Development and Machine Learning},
   journal = {Healthy Brains for Healthy Lives},
   publisher = {McGill University},
   year = {2019},
   month = {feb},
-  note={Workshop}
-}
-@booklet{Kiar2018ohbmconnectome,
-  title = {Connectome Coding: what is it, how do we do it, and why do we care?},
-  journal = {Data science in Neuroscience Symposium},
-  publisher = {Organization for Human Brain Mapping},
-  year = {2018},
-  month = {jun},
-  note={Presentation}
-}
-@booklet{Kiar2018ohbmhackathon,
-  title = {OHBM Annual BrainHack \& TrainTrack},
-  journal = {Open Science Special Interest Group},
-  publisher = {Organization for Human Brain Mapping},
-  year = {2018},
-  month = {jun},
-  note={Workshop}
-}
-@booklet{Kiar2018bhg,
-  title = {Brainhack Global: Montreal Edition},
-  journal = {McGill University \& Universite de Montreal},
-  year = {2018},
-  month = {jun},
-  note={Workshop}
-}
-@booklet{Kiar2018feindel,
-  title = {A Data Driven Approach for Tackling Big Data Connectomics},
-  journal = {Feindel Brain Imaging Lecture},
-  publisher = {Montreal Neurological Institute},
-  year = {2018},
-  month = {feb},
-  note={Presentation}
-}
-@booklet{Kiar2018neuronerds,
-  title = {Coding for Neuroscientists: An Introduction to Neuroscience Informatics},
-  journal = {Graduate Student Association for Neuroscience},
-  publisher = {McGill University},
-  year = {2018},
-  month = {jan},
-  note={Workshop}
-}
-@booklet{Kiar2017hbhl,
-	title = {Enabling Accessible and Scalable Neuroscience},
-	journal = {Healthy Brains For Healthy Lives},
-	publisher = {McGill University},
-	year = {2017},
-	month={nov},
-  note={Presentation}
-}
-@booklet{Kiar2017cbrain,
-	title = {Platforms for high performance computing in neuroscience},
-	journal = {Neuroinformatics in the Age of Big Data: Working with the Right Data and Tools},
-	publisher = {Society for Neuroscience},
-	year = {2017},
-	month={nov},
-  note={Workshop}
-}
-@booklet{Dyer2017nips,
-	title = {BigNeuro 2017: Analyzing brain data from nano to macroscale},
-	journal = {Neural Information Processing Systems},
-	year = {2017},
-	month={dec},
-  note={Workshop}
-}
-@booklet{Kimmich2017nih,
-	title = {Brainhack101 \& Exploratory Data Analysis},
-	journal = {Online Intensive for Brain Science: Computation and Imaging},
-  publisher = {National Institute of Health},
-	year = {2017},
-	month={sep},
-  note={Presentation}
-}
-@booklet{Kiar2017clowder,
-	title = {ClowdControl: Integrating Quality Control and Pipeline Deployment in the Cloud},
-  journal = {Open Science Special Interest Group},
-	publisher = {Organization for Human Brain Mapping},
-	year = {2017},
-	month={jun},
-	day={27},
-  note={Presentation}
-}
-@booklet{Kiar2017OSR1,
-	title = {Open Science Session Chair},
-  journal = {Open Science Special Interest Group},
-	publisher = {Organization for Human Brain Mapping},
-	year = {2017},
-	month={jun},
-	day={27},
-  note={Workshop}
-}
-@booklet{Kiar2017sictalk,
-	title = {Science in the Cloud (SIC): A use-case in MRI Connectomics},
-  journal = {Open Science Special Interest Group},
-	publisher = {Organization for Human Brain Mapping},
-	year = {2017},
-	month={jun},
-	day={26},
-  note={Presentation}
-}
-@booklet{Kiar2017brainhack,
-	title = {Brain Hacking 101},
-  journal = {Open Science Special Interest Group},
-	publisher = {Organization for Human Brain Mapping},
-	year = {2017},
-	month={jun},
-	day={25},
-  note={Presentation}
-}
-@booklet{Brainx2017,
-	title = {NeuroStorm: Accelerating Brain Science Discovery in the Cloud},
-  journal = {Johns Hopkins University},
-	publisher = {National Science Foundation},
-	year = {2017},
-	month={jun},
-	day={7},
-  note={Workshop}
+  note = {Workshop}
 }
 
 %% ConferencePosters
-@proceedings{kiar2019sage,
-  title   = {Enabling FAIR Scientific Tool Development, Dissemination, and Consumption with Boutiques},
-  author  = {\textbf{Kiar}, \textbf{G.} and Benderoff, E. and Charrière, J. and Dubé, S. and Guérin, L.~O. and Bonnet, A. and Camarasu-Pop, S. and Beck, N. and Rioux, P. and Boroday, S. and Brown, S.~T. and Poline, J.~B. and Evans, A.~E. and Glatard, T.},
-	journal = {Sage Assembly},
-	year    = {2019},
-	month   = {jul}
-}
-@proceedings{kiar2019boutiquesfairohbm_poster,
-  title   = {A FAIR Approach to Neuroimaging Analysis with Boutiques},
-  author  = {\textbf{Kiar}, \textbf{G.} and Benderoff, E. and Charrière, J. and Dubé, S. and Guérin, L.~O. and Bonnet, A. and Camarasu-Pop, S. and Beck, N. and Rioux, P. and Boroday, S. and Brown, S.~T. and Poline, J.~B. and Evans, A.~E. and Glatard, T.},
+%% Replace %% on following line with at symbol
+%%proceedings{levitis2018deepqcposter,
+  title = {},
+  author = {},
 	journal = {Organization for Human Brain Mapping},
-	year    = {2019},
-	month   = {jun}
-}
-@proceedings{kiar2019boutiquesfairohbm_poster,
-  title   = {OHBM 2019, Advancements in the CBRAIN Platform through the Integration of Community-Based Tools and Standards},
-  author  = {Brown, S.~T. and  Rioux, P. and Beck, N. and Khalili-Mahani, N. and Czech, C. and Taheri, A. and Boroday, S. and \textbf{Kiar}, \textbf{G.} and Lecours-Boucher, X. and Makowski, C. and Quesnel, D. and Poline, J.~B. and Adalat, R. and Glatard, T. and Evans, A.~C.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2019},
-	month   = {jun}
-}
-@proceedings{suarez2018struct2func,
-  title   = {Reverse Engineering the Human Connectome: Learning Function from Structure},
-  author  = {Suarez, L.~E. and \textbf{Kiar}, \textbf{G.} and Doyle, R.~A. and Evans, A.~C. and Misic, B.},
-	journal = {Resting State Brain Connectivity},
-	year    = {2018},
-	month   = {sep}
-}
-@proceedings{taheri2018pivt,
-  title   = {PIVT: A Platform Independent Visualization Tool},
-  author  = {Taheri, A. and Lurie, J. and Abou-Haidar, R. and Brown, S.~T. and Das, S. and Doyle, A. and Khalili-Mahani, N., and \textbf{Kiar}, \textbf{G.} and Kostopoulos, P. and Lepage, C. and Lewis, L. and Makowski, C. and Rogers, C. and Toussaint, P. and Evans, A.~C.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 2050}
-}
-@proceedings{yarkoni2018pybidsposter,
-  title   = {Pybids: Python tools for manipulation and analysis of BIDS datasets},
-  author  = {Yarkoni, T. and  de~la~Vega, A. and DuPre, E. and Esteban, O. and Halchenko, Y. and Hanke, M. and Hayot-Sasson, V. and Ivanov, A. and \textbf{Kiar}, \textbf{G.} and Markiewicz, C. and McNamara, Q. and Petrov, D. and Poline, J.~B. and Poldrack, R. and Gorgolewski, K.~J.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 2011}
-}
-@proceedings{bridgeford2018connectomicsposter,
-  title   = {A Principled Approach to Statistical Connectomics and Mega-Analysis},
-  author  = {Bridgeford, E. and \textbf{Kiar}, \textbf{G.} and Chandrashekhar, V. and Shen, C. and Gray~Roncal, W.~R. Priebe, C.~E. and Caffo, B. and Vogelstein, J.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 2442}
-}
-@proceedings{alsharif2018pingposter,
-  title   = {Exploring whole-brain structural connectivity and cognitive performance in typical development},
-  author  = {Al-Sharif, N. and \textbf{Kiar}, \textbf{G.} and Khundrakpam, B. and Evans, A.~C.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 2236}
-}
-@proceedings{kiar2018clowdrposter,
-  title   = {Clowdr: a micro-service model for scalable, reproducible, and accessible neuroinformatics},
-  author  = {\textbf{Kiar}, \textbf{G.} and Glatard, T. and Brown, S.~.T. and Evans, A.~C.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 2037}
-}
-@proceedings{doyle2018creativity,
-  title   = {Creativity is Unrelated to Intelligence and Personality: A Machine Learning Study},
-  author  = {Doyle, A. and \textbf{Kiar}, \textbf{G.} and Toussaint, P. and Lemaitre, P. and Evans, A.~C.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 2312}
-}
-@proceedings{kiar2018apineposter,
-  title   = {An Extensible Application Programming Interface for Querying Distributed Neuroscience Datasets},
-  author  = {\textbf{Kiar}, \textbf{G.} and Glatard, T. and Poline, J.~B.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 2002}
-}
-@proceedings{vogel2018alzhippoposter,
-  title   = {Heterogeneous tau-PET signal in the hippocampus resolves discrepancies between imaging and pathology},
-  author  = {Vogel, J. and Ossenkoppele, R. and \textbf{Kiar}, \textbf{G.} and Hansson, O. and Evans, A.~C.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 1119}
-}
-@proceedings{salari2018repro,
-  title   = {Numerical error propagation in the HCP structural pre-processing pipelines},
-  author  = {Salari, A. and Scaria, L. and \textbf{Kiar}, \textbf{G.} and Glatard, T.},
-	journal = {Organization for Human Brain Mapping},
-	year    = {2018},
-	month   = {jun},
-  note    = {Poster number: 2052}
-}
-@proceedings{gorgolewski2017bidsposter,
-  title={BIDS apps: Improving ease of use, accessibility, and reproducibility of neuroimaging data analysis methods},
-  author={Gorgolewski, K.J. and Alfaro-Almagro, F. and Auer, T. and Bellec, P. and Capot{\u{a}}, M. and Chakravarty, M.~M. and Churchill, N.~W. and Cohen, A.~L. and Craddock, R.~C. and Devenyi, G.~A. and Eklund, A. and Esteban, O. and Flandin, G. and Guntupalli, J.~S. and Jenkinson, M. and Keshavan, A. and \textbf{Kiar}, \textbf{G.} and Raamana, P.~R. and Raffelt, D. and Steele, C.~J. and Quirion, P.~O. and Smith, R.~E. and Strother, S. and Varoquaux, G. and Yarkoni, T. and Wang, Y. and Poldrack, R.~A.},
-	journal = {Organization for Human Brain Mapping},
-	year = {2017},
-	month={jun}
-}
-@proceedings{Kiar2016mrgrute,
-	author = {\textbf{Kiar}, \textbf{G.} and Gray Roncal, W.~R. and Mhembere, D. and Bridgeford, E.~W. and Wang, S. and Priebe, C.~E. and Burns, R. and Vogelstein, J.~T.},
-	title = {MR Graph with Rich attribUTEs DataBase (Mr. GruteDB)},
-	journal = {Organization for Human Brain Mapping},
-	year = {2016},
-	month={jun}
-}
-@proceedings{Vogelstein2015sfn,
-	author= {Vogelstein, Joshua T. and {et al.}},
-	title = {The Open Connectome Project \& NeuroData: Enabling Data Driven Neuroscience at Scale},
-	journal = {Society for Neuroscience},
-	year={2015},
-	month={oct}
-}
-@proceedings{Kiar2015c4,
-	author = {\textbf{Kiar}, \textbf{G.} and Gray Roncal, W.~R. and Mhembere, D. and Bridgeford, E.~W. and Clark, D. and Milham, M.~P. and Craddock, R.~C. and Burns, R. and Vogelstein, J.~T.},
-	title = {Community Connectomics via Cloud Computing Utilizing m2g: a Reference Pipeline},
-	journal = {Organization for Human Brain Mapping},
-	year = {2015},
-	month={jun}
+	year = {2018},
+	month = {jun},
+  note = {Poster number: }
 }
 
 %% Book Chapters
-@inbook{Kiar2017sfn,
-	title = {The Montreal Neurological Institute Ecosystem: Enabling Reproducible Neuroscience from Collection to Analysis in the Web},
-	chapter = {Neuroinformatics in the Age of Big Data: Working with the Right Data and Tools},
-	author = {\textbf{Kiar}, \textbf{G.} and Makowski, C. and Poline, J.~B. and Das, S. and Evans, A.~C.},
-	pages = {51-56},
-	publisher = {Society for Neuroscience},
-	year = {2017},
-	month={nov}
+%% Replace %% on following line with at symbol
+%%inbook{,
+	title = {},
+	chapter = {},
+	author = {},
+	pages = {},
+	publisher = {},
+	year = {},
+	month = {}
 }
 
 %% Code Publications
-@misc{greg_kiar_2018_1205654,
-  author       = { \textbf{Kiar}, \textbf{G.} },
-  title        = {Clowdr: Accessible pipeline deployment and sharing},
-  month        = mar,
-  year         = 2018,
-  doi          = {10.5281/zenodo.1205654},
-  url          = {https://doi.org/10.5281/zenodo.1205654}
-}
-@misc{tristan_glatard_2017_883149,
-  author       = {Glatard, T. and
-                  \textbf{Kiar}, \textbf{G.} and
-                  Aumentado-Armstrong, T. and
-                  Beck, N. and
-                  Ferreira~da~Silva, R. and
-                  Rousseau, M.~E.},
-  title        = {Boutiques: A descriptive command-line framework},
-  month        = sep,
-  year         = 2017,
-  doi          = {10.5281/zenodo.883149},
-  journal = {Zenodo},
-  url          = {https://doi.org/10.5281/zenodo.883149}
-}
-@misc{sicdb,
-  doi = {10.5524/100285},
-  url = {https://doi.org/10.5524/100285},
-  author = {\textbf{Kiar}, \textbf{G.} and Gorgolewski, K.~J. and Kleissas, D. and Gray~Roncal, W.~R. and Litt, B.  and Wandell, B. and Poldrack, R.~A. and Wiener, M. and Vogelstein, R.~J. and Burns, R. and Vogelstein, J.~T.},
-  publisher = {GigaScience Database},
-  title = {Example use case of SIC with the ndmg pipeline (SIC:ndmg)},
-  year = {2017}
-}
-@misc{kiar2016ndmgcode,
-	author = {\textbf{Kiar}, \textbf{G.} and Gray~Roncal, W.~R. and
-	Mhembere, D. and Bridgeford, E.~W. and Burns, R. and
-	Vogelstein, J.~T.},
-	title = {ndmg: NeuroData's MRI Graphs pipeline},
-	month = aug,
-	year = 2016,
-	journal = {Zenodo},
-	doi = {10.5281/zenodo.60206},
-	url = {http://dx.doi.org/10.5281/zenodo.60206},
-	note={open-source code}
+%% Replace %% on following line with at symbol
+%%misc{,
+  author = {},
+  title = {},
+  month = {},
+  year = {},
+  doi = {},
+  url = {}
 }
