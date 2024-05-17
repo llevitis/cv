@@ -20,6 +20,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{fontspec}
+
+% Set the path to the font relative to your project's root directory
+\newfontfamily{\academicons}{academicons}[Path = ./, Extension = .ttf]
+
 
 \addbibresource{llevitiscv.bib} % Specify the bibliography file to include publications
 
@@ -32,11 +37,14 @@
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
- \includegraphics[width=\textwidth]{./llevitis_headshot.jpg}
-\section{contact}
-\href{mailto:elizabeth.levitis@mail.mcgill.ca}{elizabeth.levitis\\@nih.gov~{\color{red} \faEnvelope}}
-\href{http://github.com/llevitis}{llevitis~{\color{purple} \faGithub}}
-\href{https://twitter.com/LevitisLiza}{LevitisLiza~{\color{blue} \faTwitter}}%\href{http://orcid.org/0000-0001-8915-496X}{{\color{orcidgreen} \aiOrcid}} %\href{https://scholar.google.com/citations?user=ztw6g7kAAAAJ&hl=en}{{\color{googred} \aiGoogleScholar}} %\href{https://www.researchgate.net/profile/Gregory_Kiar}{{\color{gateteal} \aiResearchGate}}
+ % \includegraphics[width=\textwidth]{./llevitis_headshot.jpg}
+% \section{contact}
+% % \href{mailto:elizabeth.levitis@mail.mcgill.ca}{elizabeth.levitis\\@nih.gov~{\color{red} \faEnvelope}}
+% % \href{http://github.com/llevitis}{llevitis~{\color{purple} \faGithub}}
+% % \href{https://twitter.com/LevitisLiza}{LevitisLiza~{\color{blue} \faTwitter}}%\href{http://orcid.org/0000-0001-8915-496X}{{\color{orcidgreen} \aiOrcid}} %\href{https://scholar.google.com/citations?user=ztw6g7kAAAAJ&hl=en}{{\color{googred} \aiGoogleScholar}} %\href{https://www.researchgate.net/profile/Gregory_Kiar}{{\color{gateteal} \aiResearchGate}}
+% \mbox{elizabeth.levitis @ nih . gov}
+% llevitis~{\color{purple} \faGithub}
+% LevitisLiza~{\color{blue} \faTwitter}
 \section{languages}
 english native speaker,
 russian native speaker,
@@ -103,13 +111,12 @@ in Virtual Navigation}
 
 \entry
 {07/20 -- now}
-{Section on Developmental Neurogenomics, National Institute of Mental Health}
-{Bethesda, MD}
-{\job{Software Developer \& Researcher} \\
-Applied best practices for reproducible neuroimaging to make existing datasets be Brain Imaging 
-Data Structure compliant and processed multiple modalities with open-source image processing 
-pipelines. Thesis work focuses on characterizing and predicting multimodal imaging phenotypes in individuals 
-with sex chromosome aneuploidies.}
+{Center for Medical Image Computing, University College London}
+{London, UK}
+{\job{Researcher} \\
+Applied best practices for reproducible neuroimaging to organize and process structural, diffusion, and resting-state functional MRI modalities with open-source image processing 
+pipelines. Thesis work has focused on characterizing and predicting multimodal imaging phenotypes in individuals 
+with sex chromosome aneuploidies as well as using generative deep learning approaches for normative modeling applications in childhood-onset psychiatric disorders.}
 
 \entry
 {05/17 -- 05/20}
@@ -175,6 +182,13 @@ assisting with cross-referencing.
 \subsection{Teaching and Mentoring Experience}
 
 \begin{entrylist}
+
+\begin{entrylist}
+\entry
+{2021 -- 2023}
+{University College London}
+{Minneapolis, MN}
+{Co-supervisor of MSc Student}
 
 \entry
 {10/22 -- 12/22}
@@ -252,16 +266,16 @@ individual progress based on daily homework assignments and in-class participati
 
 \begin{entrylist}
 \entry
-{2021 -- 2022}
+{2021 -- 2023}
 {OHBM Student Postdoc SIG}
 {Minneapolis, MN}
-{Treasurer-Elect}
+{Treasurer-Elect / Treasurer}
 
 \entry
 {2019 -- 2020}
 {OHBM Open Science SIG}
 {Minneapolis, MN}
-{Hackathon Co-Chair \& Organizer with Dr. Remi Gau}
+{Hackathon Co-Chair and Organizer}
 
 \entry
 {2016 -- 2017}
@@ -302,6 +316,12 @@ individual progress based on daily homework assignments and in-class participati
 \section{awards}
 
 \begin{entrylist}
+\vspace{-7pt}
+
+\entry{2023-2024}
+{Institute of Healthcare Engineering Impact Fellowship}
+{University COllege London, London, UK}
+{}
 \vspace{-7pt}
 
 \entry
@@ -352,23 +372,6 @@ individual progress based on daily homework assignments and in-class participati
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\vspace{-7pt}
-\section{interests}
-
-\textbf{professional:} neuroscience, translational research, cognitive science,
-informatics, software design, machine learning, statistics.
-\textbf{personal:} dance, crossfit, cooking.
-
-% \section{reviewed for}
-% \begin{enumerate}
-% \item Frontiers in Neuroinformatics
-% \item Gigascience
-% \end{enumerate}
-
-%----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 % \clearpage
@@ -389,9 +392,28 @@ informatics, software design, machine learning, statistics.
 \printbibsection{report}{works in progress} % Print all research reports from the bibliography
 
 \subsubsection{}{published code}
-For an up-to-date list of published code projects, please visit my GitHub profile at
-\href{https://github.com/llevitis}{https://github.com/llevitis}.
+For an up-to-date list of published code projects, please visit my GitHub profile at https://github.com/llevitis.
+%\href{https://github.com/llevitis}{https://github.com/llevitis}.
+
 % \printbibsection{misc}{published code} % Print all miscellaneous entries from the bibliography
 
 %----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\vspace{-7pt}
+\section{interests}
+
+\textbf{professional:} neuroscience, translational research, cognitive science,
+informatics, software design, machine learning, statistics.
+\textbf{personal:} dance, crossfit, cooking.
+
+% \section{reviewed for}
+% \begin{enumerate}
+% \item Frontiers in Neuroinformatics
+% \item Gigascience
+% \end{enumerate}
+
+
 \end{document}
